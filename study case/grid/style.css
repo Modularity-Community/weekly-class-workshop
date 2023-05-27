@@ -1,0 +1,46 @@
+.container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+  
+  header {
+    grid-area: header;
+    background-color: lightgray;
+    padding: 20px;
+  }
+  
+  aside.sidebar {
+    grid-area: sidebar;
+    background-color: lightblue;
+    padding: 20px;
+  }
+  
+  main.content {
+    grid-area: content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .news-box {
+    width:400px;
+    background-color: lightyellow;
+    padding: 20px;
+    height:200px;
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: lightgray;
+    padding: 20px;
+  }
+  
